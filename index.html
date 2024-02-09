@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No. 2</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <div id="General">
+        <div id="Arriba">
+            <div id="Ejercicio1">
+                <h1>Ejercicio No. 1</h1>
+                <form action="">
+                    <label for="">Base:</label>
+                    <input type="number" id="Base" required>
+                    <br>
+                    <br>
+                    <label for="">Exponente:</label>
+                    <input type="number" id="Exponente" required>
+                    <br>
+                    <br>
+                    <center><button type="button" onclick="Ejercicio1()">CALCULAR</button></center>
+                </form>
+                <h3 id="Potencia">Base^Exp =</h3>
+            </div>
+            <div>
+                <h1>Ejercicio No. 2</h1>
+                <form action="">
+                    <label for="">Grados Centígrados (°C):</label>
+                    <input type="number" id="Centigrados" required>
+                    <button type="button" onclick="Ejercicio2()">CALCULAR</button>
+                </form>
+                <h3 id="Fahrenheit">°C = </h3>
+            </div>
+            <div>
+                <h1>Ejercicio No. 3</h1>
+                <form action="">
+                    <label for="">Nombre:</label>
+                    <input type="text" id="Nombre" required>
+                    <button type="button" onclick="agregarNombre()">AGREGAR</button>
+                    <br>
+                    <ul id="listaNombres"></ul>
+                    <label for="">Número de letras:</label>
+                    <input type="number" id="numLetras" required>
+                    <button type="button" onclick="filtrarNombres()">FILTRAR</button>
+                    <ul id="listaFiltrada"></ul>
+                </form>
+            </div>
+            <div>
+                <h1>Ejercicio No. 4</h1>
+                <form action="">
+                    <label for="">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento">
+                    <button type="button" onclick="Ejercicio4()">CALCULAR</button>
+                </form>
+                <h3 id="Edad">Edad de la persona nacida en es:</h3>
+            </div>
+        </div>
+        <div id="Abajo">
+            <div>
+                <h1>Ejercicio No. 5</h1>
+                <form action="">
+                    <label for="">Ingrese un texto para calcular la cantidad de palabras:</label>
+                    <br>
+                    <center><textarea name="" id="Texto" cols="30" rows="10" required></textarea></center>
+                    <br>
+                    <center><button type="button" onclick="Ejercicio5()">CALCULAR</button></center>
+                </form>
+                <h3 id="cantidadPalabras">La cantidad de palabras en el texto es:</h3>
+            </div>
+            <div>
+                <h1>Ejercicio No. 6</h1>
+                <form action="">
+                    <label for="Base">Número:</label>
+                    <input type="number" id="Numero">
+                    <button type="button" onclick="agregarNumero()">AGREGAR</button>
+                    <br>
+                    <ul id="listaNumeros"></ul>
+                    <center><button type="button" onclick="calcularPromedio()">CALCULAR</button></center>
+                </form>
+                <h3 id="Promedio">El promedio de los números de la lista es: </h3>
+            </div>
+            <div>
+                <h1>Ejercicio No. 7</h1>
+                <form action="">
+                    <center>
+                    <label for="">Color:</label>
+                    <input type="color" id="Color">
+                    <br>
+                    <br>
+                    <button type="button" onclick="Ejercicio7()">CAMBIAR</button>
+                    </center>
+                </form>
+                <div id="Cuadro"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
